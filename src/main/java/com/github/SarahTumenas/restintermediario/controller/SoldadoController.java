@@ -1,22 +1,14 @@
-package controller;
+package com.github.SarahTumenas.restintermediario.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.SarahTumenas.restintermediario.controller.reponse.SoldadoResponse;
+import com.github.SarahTumenas.restintermediario.controller.request.SoldadoEditRequest;
 import com.github.SarahTumenas.restintermediario.dto.Soldado;
 import com.github.SarahTumenas.restintermediario.service.SoldadoService;
-import controller.reponse.SoldadoListResponse;
-import controller.reponse.SoldadoResponse;
-import controller.request.SoldadoEditRequest;
-import org.junit.jupiter.api.parallel.Resources;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.hateoas.Resources;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/v1/soldado")
@@ -61,9 +53,9 @@ public class SoldadoController {
         return ResponseEntity.ok().build();
     }
 
-    /*@GetMapping
+    @GetMapping
     public ResponseEntity<Resources<SoldadoListResponse>> buscarSoldados() {
         Resources<SoldadoListResponse>  soldados = soldadoService.buscarSoldados();
         return ResponseEntity.status(HttpStatus.OK).body(soldados);
-    }*/
+    }
 }

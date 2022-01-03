@@ -3,8 +3,6 @@ package com.github.SarahTumenas.restintermediario.filter;
 import org.junit.platform.commons.logging.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.*;
-
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;

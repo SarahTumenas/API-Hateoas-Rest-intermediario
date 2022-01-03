@@ -1,4 +1,4 @@
-package controller.request;
+package com.github.SarahTumenas.restintermediario.controller.request;
 
 public class SoldadoEditRequest {
     private String cpf;

@@ -1,4 +1,4 @@
-package controller.reponse;
+package com.github.SarahTumenas.restintermediario.controller.reponse;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.hateoas.RepresentationModel;
